@@ -8,7 +8,6 @@ def password_generator():
     random_dit = [random.choice(string.digits) for i in range(4)]
     random_pun = [random.choice(string.punctuation) for i in range(4)]
     password = random_let + random_dit + random_pun
-    print(password)
     password = ''.join(random.sample(password,len(password)))
     print(password)
 
